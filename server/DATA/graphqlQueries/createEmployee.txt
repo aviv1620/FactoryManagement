@@ -1,0 +1,3 @@
+mutation($token:String,$employee:EmployeeInput){
+  createEmployee(token:$token,employee:$employee)
+}

@@ -1,0 +1,11 @@
+query($token:String){
+  getAllDepartmentsReferences(token:$token){
+    id,
+    name,
+    manager{
+        id
+        firstName
+        lastName
+    }
+  }
+}

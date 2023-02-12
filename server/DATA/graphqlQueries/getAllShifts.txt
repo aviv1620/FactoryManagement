@@ -1,0 +1,8 @@
+query($token:String){
+  getAllShifts(token:$token){
+    id,
+    date,
+    startingHour,
+    endingHour
+  }
+}

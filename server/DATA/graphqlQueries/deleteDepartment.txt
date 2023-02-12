@@ -1,0 +1,3 @@
+mutation($token:String,$departmentID:String){
+ deleteDepartment(token:$token,departmentId:$departmentID)
+}

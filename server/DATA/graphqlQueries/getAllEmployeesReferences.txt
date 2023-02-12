@@ -1,0 +1,23 @@
+query($token:String,$employeesFilter:EmployeesFilterInput){
+  getAllEmployeesReferences(token:$token,employeesFilter:$employeesFilter){
+    id
+    firstName
+    lastName
+    startWorkYear    
+    department{
+      id
+      name
+      manager{
+        id
+        firstName
+        lastName
+      }
+    }
+    shifts{
+      id
+      date
+      startingHour
+      endingHour
+    }
+  }
+}

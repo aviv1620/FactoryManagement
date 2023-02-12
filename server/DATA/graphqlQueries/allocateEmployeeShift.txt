@@ -1,0 +1,3 @@
+mutation($token:String,$employeeID:String,$shiftID:String){
+ allocateEmployeeShift(token:$token,employeeID:$employeeID,shiftID:$shiftID)
+}

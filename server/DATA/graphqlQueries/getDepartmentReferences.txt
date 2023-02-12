@@ -1,0 +1,14 @@
+query($token:String,$departmentID:String){
+  getDepartmentReferences(token:$token,departmentId:$departmentID){
+    id
+    name
+    manager {
+      id
+      firstName
+      lastName
+      startWorkYear
+      departmentID
+      shiftsIds      
+    }
+  }
+}

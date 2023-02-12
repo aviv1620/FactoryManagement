@@ -1,0 +1,3 @@
+mutation($token:String,$departmentName:String){
+  createDepartment(token:$token,departmentName:$departmentName)
+}

@@ -1,0 +1,10 @@
+query($token:String,$employeesFilter:EmployeesFilterInput){
+  getAllEmployees(token:$token,employeesFilter:$employeesFilter){
+    id
+    firstName
+    lastName
+    startWorkYear
+    departmentID
+    shiftsIds
+  }
+}

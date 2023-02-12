@@ -1,0 +1,10 @@
+query($token:String,$employeeID:String){
+  getEmployee(token:$token,employeeID:$employeeID){
+    id
+    firstName
+    lastName
+    startWorkYear
+    departmentID
+    shiftsIds
+  }
+}

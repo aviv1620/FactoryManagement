@@ -1,0 +1,3 @@
+mutation($token:String,$shift:ShiftInput){
+  createShift(token:$token,shift:$shift)
+}

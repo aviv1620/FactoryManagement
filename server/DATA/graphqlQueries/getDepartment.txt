@@ -1,0 +1,7 @@
+query($token:String,$departmentID:String){
+  getDepartment(token:$token,departmentId:$departmentID){
+    id
+    name
+    managerID
+  }
+}

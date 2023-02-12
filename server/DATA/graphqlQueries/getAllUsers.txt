@@ -1,0 +1,13 @@
+query($token: String){
+  getAllUsers(token:$token){
+    mongoDbId
+    jsonplaceholderID
+    numOfActions
+    lestActionTime
+    name
+    username
+    email
+    phone
+    website
+  }
+}

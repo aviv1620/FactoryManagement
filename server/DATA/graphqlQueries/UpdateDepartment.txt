@@ -1,0 +1,3 @@
+mutation($token:String,$departmentID:String,$department:DepartmentInput){
+  updateDepartment(token:$token,departmentId:$departmentID,department:$department)
+}
