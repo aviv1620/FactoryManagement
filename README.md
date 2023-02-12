@@ -1,8 +1,8 @@
 This backend (server only) project demonstrates Factory management system. The Factory has employees. Each employee belongs to a department. Each employee works several shifts. Each shift composes from one or more employees.
-the system composed from Node.JS. the server manage data from Three different sources:
+the system composed from Node.JS. the server manage data from three different sources:
 1. (read only) The server read data from jsonplaceholder by **REST API** to authenticate and authorize access to the factory management system
-2. The server use MongoDB to load and store data about the employees, departments, shifts and so on.
-3. The server log to Json file the actions that user do.
+2. The server use **MongoDB** to load and store data about the employees, departments, shifts and so on.
+3. The server log to **Json file** the actions that user do.
 
 the system also track about the actions that users do. users have limit actions peer day like getting the list of employees, create a new department etc...
 the action count resets at UTC midnight.
