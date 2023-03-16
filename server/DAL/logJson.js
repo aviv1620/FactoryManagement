@@ -1,13 +1,11 @@
 const jFile = require('jsonfile');
 
-const path = "./DATA/log.json"
-
 function getLogs(){
-    return jFile.readFile(path)
+    return jFile.readFile(process.env.LOG_FILE_PATH)
 }
 
 function setLogs(obj){
-    return jFile.writeFile(path,obj)
+    return jFile.writeFile(process.env.LOG_FILE_PATH,obj)
 }
 
 module.exports = {getLogs,setLogs}

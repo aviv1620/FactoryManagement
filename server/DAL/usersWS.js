@@ -1,7 +1,7 @@
 const axios = require('axios');
 
 const getAllUsers = (params = {}) => {
-  return axios.get('https://jsonplaceholder.typicode.com/users',{params});
+  return axios.get(process.env.WEB_SERVICE_USERS_URL,{params});
 };
 
 module.exports = { getAllUsers };
